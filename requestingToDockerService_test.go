@@ -7,7 +7,7 @@ import (
 )
 
 func TestSendRequest(t *testing.T) {
-	res, err := http.DefaultClient.Get("http://localhost:8000")
+	res, err := http.DefaultClient.Get("http://localhost:8000/hello")
 	if err != nil {
 		t.Errorf("Error sending the request: %s", err)
 		return
