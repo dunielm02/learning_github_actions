@@ -20,7 +20,7 @@ func TestSendRequest(t *testing.T) {
 	}
 
 	if string(text) != "Hello, World from a container" {
-		t.Errorf("Unexpected response")
+		t.Errorf("Unexpected response, received: %s", string(text))
 		return
 	}
 }
