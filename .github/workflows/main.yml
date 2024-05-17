@@ -34,7 +34,7 @@ jobs:
     needs: build_image
     services:
       mysql:
-        image: uptime-testing-image:1.0.0
+        image: dunielm02/uptime-testing-image:1.0.0
         ports:
           - "8000:8000"
     steps:
