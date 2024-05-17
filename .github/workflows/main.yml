@@ -28,7 +28,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/uptime-testing-image:1.0.0
-          cache-from: type=registry,ref=user/app:latest
+          cache-from: type=registry,ref=dunielm02/uptime-testing-image:1.0.0
           cache-to: type=inline
   
   test:
